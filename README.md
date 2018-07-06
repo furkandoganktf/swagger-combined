@@ -1,21 +1,12 @@
-[![Build Status](https://travis-ci.org/thanhson1085/swagger-combined.svg)](https://travis-ci.org/thanhson1085/swagger-combined)
-
 [![NPM](https://nodei.co/npm/swagger-combined.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/swagger-combined/)
 
-If you are building a microservice system and using Swagger. 
+Mikroservis mimarisi oluşturuyorsanız ve Swagger kullanıyorsanız
 
-This packet is able to help you combine all swagger documents to only one document.
+Bu paket tüm Swagger dosyalarınızı tek bır dosyada birleştirmenize yardımcı olur
 
-For example, you have the swagger documents at `http://service1/docs`, `http://service2/docs`
+Örnek olarak,  `http://service1/docs`, `http://service2/docs` isimli iki Swagger dosyanız var
 
-This will help you combine all links above to only one link `http://service/docs`
-
-**NOTE: If you need Gulp, ES6 and somethings more, please see branch [added_gulp](https://github.com/thanhson1085/swagger-combined/tree/added_gulp)**
-
-### Installation & Run from Docker
-```
-docker run -d -p 3000:3000 thanhson1085/swagger-combined
-```
+Bu size yukarıdaki bütün linkleri tek bir linkte gösterir.`http://service/docs`
 
 ### Configuration file
 See config/default.json as below:

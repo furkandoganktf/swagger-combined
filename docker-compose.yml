@@ -1,0 +1,8 @@
+version: '3'
+services:
+  deneme:
+    build: .
+    ports:
+     - "3000:3000"
+    volumes:
+     - ./configurations/config2/default.json:/build/config/default.json

@@ -18,6 +18,7 @@ app.use(function(req, res, next) {
 // list all swagger document urls
 var listUrl = config.get("list_url");
 
+
 // general infor of your application
 var info = config.get("info");
 app.get('/docs', function(req, res) {

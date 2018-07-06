@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thanhson1085/swagger-combined.git"
+    "url": "git+https://github.com/furkandoganktf/swagger-combined.git"
   },
   "dependencies": {
     "config": "^1.15.0",
@@ -28,25 +28,18 @@
     "microservices"
   ],
   "author": {
-    "name": "Nguyen Sy Thanh Son",
-    "email": "thanhson1085@gmail.com",
-    "url": "https://sonnguyen.ws"
+    "name": "Furkan Doğan",
+    "email": "furkandoganktf@gmail.com",
   },
   "license": "MIT",
   "gitHead": "39d7e324dad2f540f569aaab2188767bae08f50f",
   "bugs": {
-    "url": "https://github.com/thanhson1085/swagger-combined/issues"
+    "url": "https://github.com/furkandoganktf/swagger-combined/issues"
   },
-  "homepage": "https://github.com/thanhson1085/swagger-combined#readme",
+  "homepage": "https://github.com/furkandoganktf/swagger-combined#readme",
   "dist": {
     "shasum": "54829d56373b9655fa31cbc3f979be18962c6b37",
     "tarball": "http://registry.npmjs.org/swagger-combined/-/swagger-combined-1.2.0.tgz"
   },
-  "maintainers": [
-    {
-      "name": "thanhson1085",
-      "email": "thanhson1085@gmail.com"
-    }
-  ],
   "directories": {}
 }
