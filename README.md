@@ -1,5 +1,3 @@
-[![NPM](https://nodei.co/npm/swagger-combined.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/swagger-combined/)
-
 Mikroservis mimarisi oluşturuyorsanız ve Swagger kullanıyorsanız
 
 Bu paket tüm Swagger dosyalarınızı tek bır dosyada birleştirmenize yardımcı olur
@@ -8,7 +6,12 @@ Bu paket tüm Swagger dosyalarınızı tek bır dosyada birleştirmenize yardım
 
 Bu size yukarıdaki bütün linkleri tek bir linkte gösterir.`http://service/docs`
 
-### Configuration file
+### Installation 
+```
+git clone https://github.com/furkandoganktf/swagger-combined.git
+```
+
+### Configuration 
 See config/default.json as below:
 ```
 {
@@ -29,15 +32,41 @@ See config/default.json as below:
 
 Please make note that you changed `config/default.json` to match all swagger document links you have
 
-### Installation & Run from Source Code
+### Multiple Configuration 
+See configurations/config/default.json or configurations/config2/default.json  as below:
 ```
-git clone https://github.com/thanhson1085/swagger-combined.git
+{
+    "list_url": [
+        {
+            "docs": "http://petstore.swagger.io/v2/swagger.json",
+            "base_path": "http://petstore.swagger.io/v2",
+            "route_match": ["/user*", "/pet*", "/store*"]
+        }
+    ],
+    "info": { "title": "Example API", "version": "1.0" },
+    "port": 3000
+}
 ```
+To get build for any configuration you can change the volume of docker-compose.yml as below :
+```
+version: '3'
+services:
+  deneme:
+    build: .
+    ports:
+     - "3000:3000"
+    volumes:
+     - ./configurations/config2/default.json:/build/config/default.json
+
+```
+
+### Run from Source Code
+
 Run:
 ```
 cd swagger-combined
-npm install
-node index.js
+docker-compose up -d 
+
 ```
 
 ### Test
@@ -65,4 +94,4 @@ With config/default.json:
 ```
 
 ### License (MIT)
-Copyright (c) 2015 Nguyen Sy Thanh Son <thanhson1085@gmail.com>
+Copyright (c) 2018 Furkan Doğan <furkandoganktf@gmail.com>
